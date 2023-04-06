@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-generator",
+  "version": "1.0.0",
+  "description": "command line application to generate porftolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kartavya99/Portfolio-Generator.git"
+  },
+  "author": "kartavya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kartavya99/Portfolio-Generator/issues"
+  },
+  "homepage": "https://github.com/kartavya99/Portfolio-Generator#readme",
+  "dependencies": {
+    "inquirer": "^9.1.5"
+  }
+}
