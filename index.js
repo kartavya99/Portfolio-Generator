@@ -1,5 +1,6 @@
-const inquire = require("inquire");
+const inquirer = require("inquirer");
 const fs = require("fs");
+const { prependListener } = require("process");
 
 const promptUser = () => {
   return inquirer.prompt([
@@ -59,3 +60,12 @@ const generateHTML = ({ name, location, github, linkedin }) =>
 </div>
 </body>
 </html>`;
+
+const init = () => {
+  promptUser()
+    .then((answers) => fs.writeFileSync("index.html", generateHTML(answers)))
+    .then(() => console.log("Successfully wrote to index.html"))
+    .then((err) => console.error(err));
+};
+
+init();

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/kartavya99/Portfolio-Generator#readme",
   "dependencies": {
-    "inquirer": "^9.1.5"
+    "inquirer": "^8.2.5",
+    "node-fetch": "^2.6.1"
   }
 }
